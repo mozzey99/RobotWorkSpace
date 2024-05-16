@@ -1,0 +1,735 @@
+[0.000000] (-) TimerEvent: {}
+[0.000880] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.001158] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.001831] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/ubuntu/robot_ws/install/serial')])}
+[0.002330] (serial) JobStarted: {'identifier': 'serial'}
+[0.053260] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.089628] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.091707] (serial) Command: {'cmd': ['/bin/cmake', '/home/ubuntu/robot_ws/src/serial', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/install/serial'], 'cwd': '/home/ubuntu/robot_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '1449'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/robot_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1317'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator2bcb3aa092f2b6032576f3fd56ad9afe9'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2513'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:45680'), ('_', '/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1596,unix/ubuntu:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', 'b4424984f0f944e49d8b1e75add8851c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':10.0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0e9c8e4c-be8d-496b-b28b-e69f2cd4c88a'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/robot_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099349] (-) TimerEvent: {}
+[0.146747] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'cmake'}
+[0.150711] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'build'}
+[0.154540] (my_bot) Command: {'cmd': ['/bin/cmake', '--build', '/home/ubuntu/robot_ws/build/my_bot', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/robot_ws/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '1449'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/robot_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1317'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator2bcb3aa092f2b6032576f3fd56ad9afe9'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2513'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:45680'), ('_', '/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1596,unix/ubuntu:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', 'b4424984f0f944e49d8b1e75add8851c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':10.0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0e9c8e4c-be8d-496b-b28b-e69f2cd4c88a'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/robot_ws/build/my_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.199593] (-) TimerEvent: {}
+[0.300399] (-) TimerEvent: {}
+[0.401324] (-) TimerEvent: {}
+[0.461382] (my_bot) CommandEnded: {'returncode': 0}
+[0.501576] (-) TimerEvent: {}
+[0.565035] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'install'}
+[0.601838] (-) TimerEvent: {}
+[0.605684] (my_bot) Command: {'cmd': ['/bin/cmake', '--install', '/home/ubuntu/robot_ws/build/my_bot'], 'cwd': '/home/ubuntu/robot_ws/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '1449'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/robot_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1317'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator2bcb3aa092f2b6032576f3fd56ad9afe9'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2513'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:45680'), ('_', '/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1596,unix/ubuntu:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', 'b4424984f0f944e49d8b1e75add8851c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':10.0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0e9c8e4c-be8d-496b-b28b-e69f2cd4c88a'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/robot_ws/build/my_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.649244] (my_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.652340] (my_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.659293] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/config/empty.yaml\n'}
+[0.664990] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/description/inertial_macros.xacro\n'}
+[0.666447] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/description/lidar.xacro\n'}
+[0.668537] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro\n'}
+[0.670291] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/description/robot_core.xacro\n'}
+[0.673689] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/launch/rplidar.launch.py\n'}
+[0.675154] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/launch/rsp.launch.py\n'}
+[0.682493] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/worlds/empty.world\n'}
+[0.690809] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot\n'}
+[0.693352] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot\n'}
+[0.696096] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh\n'}
+[0.700541] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv\n'}
+[0.703028] (-) TimerEvent: {}
+[0.704557] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/environment/path.sh\n'}
+[0.709434] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/environment/path.dsv\n'}
+[0.711705] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/local_setup.bash\n'}
+[0.713984] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/local_setup.sh\n'}
+[0.717939] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/local_setup.zsh\n'}
+[0.721004] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/local_setup.dsv\n'}
+[0.723530] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/package.dsv\n'}
+[0.769873] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot\n'}
+[0.773133] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake\n'}
+[0.774821] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake\n'}
+[0.776173] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/package.xml\n'}
+[0.785725] (my_bot) CommandEnded: {'returncode': 0}
+[0.803648] (-) TimerEvent: {}
+[0.808352] (serial) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.904125] (-) TimerEvent: {}
+[1.005522] (-) TimerEvent: {}
+[1.009624] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[1.105718] (-) TimerEvent: {}
+[1.206499] (-) TimerEvent: {}
+[1.307313] (-) TimerEvent: {}
+[1.408098] (-) TimerEvent: {}
+[1.508942] (-) TimerEvent: {}
+[1.560731] (serial) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.586282] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /bin/cc\n'}
+[1.609114] (-) TimerEvent: {}
+[1.709927] (-) TimerEvent: {}
+[1.810936] (-) TimerEvent: {}
+[1.874460] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /bin/cc -- works\n'}
+[1.880031] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.911102] (-) TimerEvent: {}
+[2.011902] (-) TimerEvent: {}
+[2.112989] (-) TimerEvent: {}
+[2.173098] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.213011] (serial) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.213507] (-) TimerEvent: {}
+[2.214944] (serial) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.226286] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /bin/c++\n'}
+[2.313758] (-) TimerEvent: {}
+[2.414580] (-) TimerEvent: {}
+[2.515372] (-) TimerEvent: {}
+[2.547770] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /bin/c++ -- works\n'}
+[2.554081] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.615573] (-) TimerEvent: {}
+[2.716364] (-) TimerEvent: {}
+[2.817296] (-) TimerEvent: {}
+[2.874938] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.913424] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.915083] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.917451] (-) TimerEvent: {}
+[2.938077] (serial) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.017638] (-) TimerEvent: {}
+[3.073009] (serial) StdoutLine: {'line': b'-- Found PythonInterp: /bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.073659] (serial) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /bin/python3\n'}
+[3.117809] (-) TimerEvent: {}
+[3.218603] (-) TimerEvent: {}
+[3.319571] (-) TimerEvent: {}
+[3.420197] (-) TimerEvent: {}
+[3.520808] (-) TimerEvent: {}
+[3.621411] (-) TimerEvent: {}
+[3.722035] (-) TimerEvent: {}
+[3.806723] (serial) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.822208] (-) TimerEvent: {}
+[3.922968] (-) TimerEvent: {}
+[4.023632] (-) TimerEvent: {}
+[4.087242] (serial) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[4.123800] (-) TimerEvent: {}
+[4.163847] (serial) StdoutLine: {'line': b'-- Found Boost: /lib/aarch64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0")  \n'}
+[4.184058] (serial) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[4.193676] (serial) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.223973] (-) TimerEvent: {}
+[4.324724] (-) TimerEvent: {}
+[4.425465] (-) TimerEvent: {}
+[4.519439] (serial) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.520291] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.525607] (-) TimerEvent: {}
+[4.626305] (-) TimerEvent: {}
+[4.727111] (-) TimerEvent: {}
+[4.821404] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[4.822164] (serial) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[4.827257] (-) TimerEvent: {}
+[4.928019] (-) TimerEvent: {}
+[5.028936] (-) TimerEvent: {}
+[5.128591] (serial) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[5.129153] (-) TimerEvent: {}
+[5.131601] (serial) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.229364] (-) TimerEvent: {}
+[5.330002] (-) TimerEvent: {}
+[5.415797] (serial) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.430171] (-) TimerEvent: {}
+[5.458916] (serial) StdoutLine: {'line': b'-- Generating done\n'}
+[5.464802] (serial) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/robot_ws/build/serial\n'}
+[5.480866] (serial) CommandEnded: {'returncode': 0}
+[5.482666] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[5.483499] (serial) Command: {'cmd': ['/bin/cmake', '--build', '/home/ubuntu/robot_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/robot_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '1449'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/robot_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1317'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator2bcb3aa092f2b6032576f3fd56ad9afe9'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2513'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:45680'), ('_', '/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1596,unix/ubuntu:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', 'b4424984f0f944e49d8b1e75add8851c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':10.0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0e9c8e4c-be8d-496b-b28b-e69f2cd4c88a'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/robot_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[5.530412] (-) TimerEvent: {}
+[5.631186] (-) TimerEvent: {}
+[5.648987] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial\x1b[0m\n'}
+[5.649737] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[5.651049] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[5.701113] (serial) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o\x1b[0m\n'}
+[5.708557] (serial) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o\x1b[0m\n'}
+[5.731452] (-) TimerEvent: {}
+[5.766891] (serial) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[5.778029] (serial) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[5.831644] (-) TimerEvent: {}
+[5.932420] (-) TimerEvent: {}
+[6.033598] (-) TimerEvent: {}
+[6.134516] (-) TimerEvent: {}
+[6.235386] (-) TimerEvent: {}
+[6.336369] (-) TimerEvent: {}
+[6.437294] (-) TimerEvent: {}
+[6.538367] (-) TimerEvent: {}
+[6.639478] (-) TimerEvent: {}
+[6.740393] (-) TimerEvent: {}
+[6.841394] (-) TimerEvent: {}
+[6.942587] (-) TimerEvent: {}
+[7.043564] (-) TimerEvent: {}
+[7.144621] (-) TimerEvent: {}
+[7.245668] (-) TimerEvent: {}
+[7.346649] (-) TimerEvent: {}
+[7.447552] (-) TimerEvent: {}
+[7.548571] (-) TimerEvent: {}
+[7.649682] (-) TimerEvent: {}
+[7.750646] (-) TimerEvent: {}
+[7.851549] (-) TimerEvent: {}
+[7.952725] (-) TimerEvent: {}
+[8.053743] (-) TimerEvent: {}
+[8.084819] (serial) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\x1b[0m\n'}
+[8.153993] (-) TimerEvent: {}
+[8.255802] (-) TimerEvent: {}
+[8.356769] (-) TimerEvent: {}
+[8.458195] (-) TimerEvent: {}
+[8.559717] (-) TimerEvent: {}
+[8.661118] (-) TimerEvent: {}
+[8.762821] (-) TimerEvent: {}
+[8.864700] (-) TimerEvent: {}
+[8.969992] (-) TimerEvent: {}
+[9.072933] (-) TimerEvent: {}
+[9.174496] (-) TimerEvent: {}
+[9.276053] (-) TimerEvent: {}
+[9.377469] (-) TimerEvent: {}
+[9.479030] (-) TimerEvent: {}
+[9.580519] (-) TimerEvent: {}
+[9.682069] (-) TimerEvent: {}
+[9.725793] (serial) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[9.782249] (-) TimerEvent: {}
+[9.881932] (serial) StdoutLine: {'line': b'[ 42%] Built target gtest_main\n'}
+[9.882984] (-) TimerEvent: {}
+[9.984725] (-) TimerEvent: {}
+[10.085928] (-) TimerEvent: {}
+[10.186852] (-) TimerEvent: {}
+[10.287664] (-) TimerEvent: {}
+[10.306483] (serial) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libserial.a\x1b[0m\n'}
+[10.387872] (-) TimerEvent: {}
+[10.448653] (serial) StdoutLine: {'line': b'[ 50%] Built target serial\n'}
+[10.488062] (-) TimerEvent: {}
+[10.491952] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial_example\x1b[0m\n'}
+[10.540320] (serial) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o\x1b[0m\n'}
+[10.588266] (-) TimerEvent: {}
+[10.689130] (-) TimerEvent: {}
+[10.789904] (-) TimerEvent: {}
+[10.890742] (-) TimerEvent: {}
+[10.991628] (-) TimerEvent: {}
+[11.092459] (-) TimerEvent: {}
+[11.193338] (-) TimerEvent: {}
+[11.294180] (-) TimerEvent: {}
+[11.395051] (-) TimerEvent: {}
+[11.495880] (-) TimerEvent: {}
+[11.596678] (-) TimerEvent: {}
+[11.697494] (-) TimerEvent: {}
+[11.798366] (-) TimerEvent: {}
+[11.899266] (-) TimerEvent: {}
+[11.934841] (serial) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable serial_example\x1b[0m\n'}
+[11.999551] (-) TimerEvent: {}
+[12.100653] (-) TimerEvent: {}
+[12.202047] (-) TimerEvent: {}
+[12.242749] (serial) StdoutLine: {'line': b'[ 64%] Built target serial_example\n'}
+[12.302230] (-) TimerEvent: {}
+[12.403002] (-) TimerEvent: {}
+[12.503731] (-) TimerEvent: {}
+[12.604616] (-) TimerEvent: {}
+[12.705404] (-) TimerEvent: {}
+[12.806269] (-) TimerEvent: {}
+[12.907210] (-) TimerEvent: {}
+[13.007951] (-) TimerEvent: {}
+[13.108699] (-) TimerEvent: {}
+[13.209420] (-) TimerEvent: {}
+[13.310241] (-) TimerEvent: {}
+[13.411049] (-) TimerEvent: {}
+[13.511768] (-) TimerEvent: {}
+[13.612473] (-) TimerEvent: {}
+[13.713203] (-) TimerEvent: {}
+[13.813902] (-) TimerEvent: {}
+[13.914621] (-) TimerEvent: {}
+[14.015383] (-) TimerEvent: {}
+[14.116184] (-) TimerEvent: {}
+[14.216961] (-) TimerEvent: {}
+[14.317753] (-) TimerEvent: {}
+[14.418574] (-) TimerEvent: {}
+[14.519367] (-) TimerEvent: {}
+[14.620086] (-) TimerEvent: {}
+[14.720861] (-) TimerEvent: {}
+[14.821667] (-) TimerEvent: {}
+[14.922467] (-) TimerEvent: {}
+[15.023174] (-) TimerEvent: {}
+[15.123900] (-) TimerEvent: {}
+[15.224617] (-) TimerEvent: {}
+[15.325349] (-) TimerEvent: {}
+[15.426072] (-) TimerEvent: {}
+[15.526867] (-) TimerEvent: {}
+[15.627599] (-) TimerEvent: {}
+[15.728378] (-) TimerEvent: {}
+[15.829108] (-) TimerEvent: {}
+[15.929822] (-) TimerEvent: {}
+[16.030607] (-) TimerEvent: {}
+[16.131355] (-) TimerEvent: {}
+[16.232077] (-) TimerEvent: {}
+[16.332851] (-) TimerEvent: {}
+[16.433578] (-) TimerEvent: {}
+[16.534301] (-) TimerEvent: {}
+[16.635092] (-) TimerEvent: {}
+[16.735820] (-) TimerEvent: {}
+[16.836546] (-) TimerEvent: {}
+[16.937264] (-) TimerEvent: {}
+[17.038026] (-) TimerEvent: {}
+[17.138781] (-) TimerEvent: {}
+[17.239581] (-) TimerEvent: {}
+[17.340307] (-) TimerEvent: {}
+[17.441036] (-) TimerEvent: {}
+[17.541773] (-) TimerEvent: {}
+[17.642573] (-) TimerEvent: {}
+[17.743314] (-) TimerEvent: {}
+[17.844043] (-) TimerEvent: {}
+[18.019165] (-) TimerEvent: {}
+[18.119934] (-) TimerEvent: {}
+[18.220630] (-) TimerEvent: {}
+[18.321349] (-) TimerEvent: {}
+[18.422109] (-) TimerEvent: {}
+[18.522870] (-) TimerEvent: {}
+[18.623599] (-) TimerEvent: {}
+[18.724427] (-) TimerEvent: {}
+[18.825401] (-) TimerEvent: {}
+[18.926318] (-) TimerEvent: {}
+[18.939673] (serial) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[19.026512] (-) TimerEvent: {}
+[19.127227] (-) TimerEvent: {}
+[19.189651] (serial) StdoutLine: {'line': b'[ 71%] Built target gtest\n'}
+[19.227425] (-) TimerEvent: {}
+[19.233992] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial-test\x1b[0m\n'}
+[19.234626] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial-test-timer\x1b[0m\n'}
+[19.294734] (serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o\x1b[0m\n'}
+[19.295556] (serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o\x1b[0m\n'}
+[19.327681] (-) TimerEvent: {}
+[19.428585] (-) TimerEvent: {}
+[19.529357] (-) TimerEvent: {}
+[19.630063] (-) TimerEvent: {}
+[19.730835] (-) TimerEvent: {}
+[19.831751] (-) TimerEvent: {}
+[19.932555] (-) TimerEvent: {}
+[20.033385] (-) TimerEvent: {}
+[20.134240] (-) TimerEvent: {}
+[20.235077] (-) TimerEvent: {}
+[20.335956] (-) TimerEvent: {}
+[20.436750] (-) TimerEvent: {}
+[20.537621] (-) TimerEvent: {}
+[20.638587] (-) TimerEvent: {}
+[20.739511] (-) TimerEvent: {}
+[20.840628] (-) TimerEvent: {}
+[20.941537] (-) TimerEvent: {}
+[21.042552] (-) TimerEvent: {}
+[21.143461] (-) TimerEvent: {}
+[21.244329] (-) TimerEvent: {}
+[21.345163] (-) TimerEvent: {}
+[21.445942] (-) TimerEvent: {}
+[21.546803] (-) TimerEvent: {}
+[21.647681] (-) TimerEvent: {}
+[21.748503] (-) TimerEvent: {}
+[21.849338] (-) TimerEvent: {}
+[21.950143] (-) TimerEvent: {}
+[22.051012] (-) TimerEvent: {}
+[22.151863] (-) TimerEvent: {}
+[22.252700] (-) TimerEvent: {}
+[22.353636] (-) TimerEvent: {}
+[22.435044] (serial) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable serial-test-timer\x1b[0m\n'}
+[22.453854] (-) TimerEvent: {}
+[22.555031] (-) TimerEvent: {}
+[22.656042] (-) TimerEvent: {}
+[22.756978] (-) TimerEvent: {}
+[22.857833] (-) TimerEvent: {}
+[22.958617] (-) TimerEvent: {}
+[22.962217] (serial) StdoutLine: {'line': b'[ 92%] Built target serial-test-timer\n'}
+[22.980205] (serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable serial-test\x1b[0m\n'}
+[23.058817] (-) TimerEvent: {}
+[23.159568] (-) TimerEvent: {}
+[23.260371] (-) TimerEvent: {}
+[23.361086] (-) TimerEvent: {}
+[23.461987] (-) TimerEvent: {}
+[23.487983] (serial) StdoutLine: {'line': b'[100%] Built target serial-test\n'}
+[23.527776] (serial) CommandEnded: {'returncode': 0}
+[23.562263] (-) TimerEvent: {}
+[23.663109] (-) TimerEvent: {}
+[23.708363] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[23.709312] (serial) Command: {'cmd': ['/bin/cmake', '--install', '/home/ubuntu/robot_ws/build/serial'], 'cwd': '/home/ubuntu/robot_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '1449'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/robot_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1317'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator2bcb3aa092f2b6032576f3fd56ad9afe9'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2513'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:45680'), ('_', '/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1596,unix/ubuntu:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', 'b4424984f0f944e49d8b1e75add8851c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':10.0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0e9c8e4c-be8d-496b-b28b-e69f2cd4c88a'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/robot_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[23.749648] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.751073] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.752706] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/lib/libserial.a\n'}
+[23.763285] (-) TimerEvent: {}
+[23.786314] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/include/serial/serial.h\n'}
+[23.823187] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/include/serial/v8stdint.h\n'}
+[23.856552] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[23.863442] (-) TimerEvent: {}
+[23.894769] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[23.927567] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[23.961099] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[23.963584] (-) TimerEvent: {}
+[23.996605] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[24.028967] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[24.062243] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/environment/path.sh\n'}
+[24.063695] (-) TimerEvent: {}
+[24.098717] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/environment/path.dsv\n'}
+[24.132262] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/local_setup.bash\n'}
+[24.163910] (-) TimerEvent: {}
+[24.165664] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/local_setup.sh\n'}
+[24.200625] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/local_setup.zsh\n'}
+[24.235151] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/local_setup.dsv\n'}
+[24.264084] (-) TimerEvent: {}
+[24.269865] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/package.dsv\n'}
+[24.307466] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[24.341266] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[24.364261] (-) TimerEvent: {}
+[24.375043] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[24.410988] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[24.443349] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[24.464444] (-) TimerEvent: {}
+[24.476210] (serial) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/serial/share/serial/package.xml\n'}
+[24.515692] (serial) CommandEnded: {'returncode': 0}
+[24.564709] (-) TimerEvent: {}
+[24.665547] (-) TimerEvent: {}
+[24.740152] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[24.744375] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[24.765804] (-) TimerEvent: {}
+[24.790716] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[24.791805] (diffdrive_arduino) Command: {'cmd': ['/bin/cmake', '/home/ubuntu/robot_ws/src/diffdrive_arduino', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/install/diffdrive_arduino'], 'cwd': '/home/ubuntu/robot_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '1449'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/robot_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/robot_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1317'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator2bcb3aa092f2b6032576f3fd56ad9afe9'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2513'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:45680'), ('_', '/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1596,unix/ubuntu:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', 'b4424984f0f944e49d8b1e75add8851c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':10.0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/robot_ws/install/serial:/opt/ros/foxy'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0e9c8e4c-be8d-496b-b28b-e69f2cd4c88a'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/robot_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/robot_ws/install/serial:/opt/ros/foxy')]), 'shell': False}
+[24.866153] (-) TimerEvent: {}
+[24.967886] (-) TimerEvent: {}
+[25.042015] (diffdrive_arduino) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[25.067212] (-) TimerEvent: {}
+[25.168003] (-) TimerEvent: {}
+[25.256847] (diffdrive_arduino) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[25.268224] (-) TimerEvent: {}
+[25.273587] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working C compiler: /bin/cc\n'}
+[25.368444] (-) TimerEvent: {}
+[25.469362] (-) TimerEvent: {}
+[25.556497] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working C compiler: /bin/cc -- works\n'}
+[25.559297] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[25.569649] (-) TimerEvent: {}
+[25.670452] (-) TimerEvent: {}
+[25.771180] (-) TimerEvent: {}
+[25.851566] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[25.871316] (-) TimerEvent: {}
+[25.889369] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[25.890408] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[25.899045] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working CXX compiler: /bin/c++\n'}
+[25.972000] (-) TimerEvent: {}
+[26.073232] (-) TimerEvent: {}
+[26.174059] (-) TimerEvent: {}
+[26.225487] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working CXX compiler: /bin/c++ -- works\n'}
+[26.229457] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[26.274283] (-) TimerEvent: {}
+[26.375055] (-) TimerEvent: {}
+[26.475755] (-) TimerEvent: {}
+[26.551083] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[26.575910] (-) TimerEvent: {}
+[26.591509] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[26.593128] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[26.615525] (diffdrive_arduino) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[26.676029] (-) TimerEvent: {}
+[26.736275] (diffdrive_arduino) StdoutLine: {'line': b'-- Found PythonInterp: /bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[26.736865] (diffdrive_arduino) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /bin/python3\n'}
+[26.776207] (-) TimerEvent: {}
+[26.876903] (-) TimerEvent: {}
+[26.977585] (-) TimerEvent: {}
+[27.078191] (-) TimerEvent: {}
+[27.178810] (-) TimerEvent: {}
+[27.279421] (-) TimerEvent: {}
+[27.380054] (-) TimerEvent: {}
+[27.452914] (diffdrive_arduino) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[27.480180] (-) TimerEvent: {}
+[27.580845] (-) TimerEvent: {}
+[27.671102] (diffdrive_arduino) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/ubuntu/robot_ws/install/serial/share/serial/cmake)\n'}
+[27.681017] (-) TimerEvent: {}
+[27.691748] (diffdrive_arduino) StdoutLine: {'line': b'-- Found hardware_interface: 0.11.0 (/opt/ros/foxy/share/hardware_interface/cmake)\n'}
+[27.781191] (-) TimerEvent: {}
+[27.881909] (-) TimerEvent: {}
+[27.982651] (-) TimerEvent: {}
+[28.015708] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[28.082807] (-) TimerEvent: {}
+[28.083887] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[28.182969] (-) TimerEvent: {}
+[28.283606] (-) TimerEvent: {}
+[28.384261] (-) TimerEvent: {}
+[28.484913] (-) TimerEvent: {}
+[28.585704] (-) TimerEvent: {}
+[28.686398] (-) TimerEvent: {}
+[28.731441] (diffdrive_arduino) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[28.786563] (-) TimerEvent: {}
+[28.887249] (-) TimerEvent: {}
+[28.986204] (diffdrive_arduino) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[28.987357] (-) TimerEvent: {}
+[29.087961] (-) TimerEvent: {}
+[29.188618] (-) TimerEvent: {}
+[29.289291] (-) TimerEvent: {}
+[29.389960] (-) TimerEvent: {}
+[29.490652] (-) TimerEvent: {}
+[29.591349] (-) TimerEvent: {}
+[29.621472] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[29.691518] (-) TimerEvent: {}
+[29.792186] (-) TimerEvent: {}
+[29.892935] (-) TimerEvent: {}
+[29.993608] (-) TimerEvent: {}
+[30.094338] (-) TimerEvent: {}
+[30.195060] (-) TimerEvent: {}
+[30.295758] (-) TimerEvent: {}
+[30.396472] (-) TimerEvent: {}
+[30.497174] (-) TimerEvent: {}
+[30.597965] (-) TimerEvent: {}
+[30.698676] (-) TimerEvent: {}
+[30.799360] (-) TimerEvent: {}
+[30.900032] (-) TimerEvent: {}
+[31.000717] (-) TimerEvent: {}
+[31.101461] (-) TimerEvent: {}
+[31.202143] (-) TimerEvent: {}
+[31.302866] (-) TimerEvent: {}
+[31.403556] (-) TimerEvent: {}
+[31.504233] (-) TimerEvent: {}
+[31.604912] (-) TimerEvent: {}
+[31.705651] (-) TimerEvent: {}
+[31.755254] (diffdrive_arduino) StdoutLine: {'line': b'-- Found controller_manager: 0.11.0 (/opt/ros/foxy/share/controller_manager/cmake)\n'}
+[31.805801] (-) TimerEvent: {}
+[31.906494] (-) TimerEvent: {}
+[32.007170] (-) TimerEvent: {}
+[32.107848] (-) TimerEvent: {}
+[32.156543] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[32.164497] (diffdrive_arduino) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[32.168208] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[32.208044] (-) TimerEvent: {}
+[32.308914] (-) TimerEvent: {}
+[32.410074] (-) TimerEvent: {}
+[32.474976] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[32.476018] (diffdrive_arduino) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[32.510221] (-) TimerEvent: {}
+[32.611075] (-) TimerEvent: {}
+[32.711961] (-) TimerEvent: {}
+[32.785058] (diffdrive_arduino) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[32.785872] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[32.812182] (-) TimerEvent: {}
+[32.913022] (-) TimerEvent: {}
+[33.013841] (-) TimerEvent: {}
+[33.072076] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[33.072836] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[33.114034] (-) TimerEvent: {}
+[33.214801] (-) TimerEvent: {}
+[33.315623] (-) TimerEvent: {}
+[33.370123] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[33.373567] (diffdrive_arduino) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[33.415778] (-) TimerEvent: {}
+[33.516461] (-) TimerEvent: {}
+[33.617316] (-) TimerEvent: {}
+[33.718009] (-) TimerEvent: {}
+[33.818730] (-) TimerEvent: {}
+[33.919455] (-) TimerEvent: {}
+[34.020143] (-) TimerEvent: {}
+[34.120785] (-) TimerEvent: {}
+[34.221465] (-) TimerEvent: {}
+[34.322128] (-) TimerEvent: {}
+[34.422857] (-) TimerEvent: {}
+[34.523518] (-) TimerEvent: {}
+[34.624304] (-) TimerEvent: {}
+[34.725135] (-) TimerEvent: {}
+[34.825795] (-) TimerEvent: {}
+[34.926500] (-) TimerEvent: {}
+[35.027203] (-) TimerEvent: {}
+[35.127916] (-) TimerEvent: {}
+[35.228751] (-) TimerEvent: {}
+[35.329421] (-) TimerEvent: {}
+[35.430094] (-) TimerEvent: {}
+[35.530755] (-) TimerEvent: {}
+[35.631434] (-) TimerEvent: {}
+[35.732199] (-) TimerEvent: {}
+[35.744300] (diffdrive_arduino) StdoutLine: {'line': b'-- Configuring done\n'}
+[35.832366] (-) TimerEvent: {}
+[35.933075] (-) TimerEvent: {}
+[36.031516] (diffdrive_arduino) StdoutLine: {'line': b'-- Generating done\n'}
+[36.033136] (-) TimerEvent: {}
+[36.038195] (diffdrive_arduino) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/robot_ws/build/diffdrive_arduino\n'}
+[36.074564] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[36.076700] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[36.077747] (diffdrive_arduino) Command: {'cmd': ['/bin/cmake', '--build', '/home/ubuntu/robot_ws/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/robot_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '1449'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/robot_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/robot_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1317'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator2bcb3aa092f2b6032576f3fd56ad9afe9'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2513'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:45680'), ('_', '/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1596,unix/ubuntu:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', 'b4424984f0f944e49d8b1e75add8851c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':10.0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/robot_ws/install/serial:/opt/ros/foxy'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0e9c8e4c-be8d-496b-b28b-e69f2cd4c88a'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/robot_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/robot_ws/install/serial:/opt/ros/foxy')]), 'shell': False}
+[36.133491] (-) TimerEvent: {}
+[36.234342] (-) TimerEvent: {}
+[36.265479] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fake_robot\x1b[0m\n'}
+[36.266155] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target diffdrive_arduino\x1b[0m\n'}
+[36.334558] (-) TimerEvent: {}
+[36.435314] (-) TimerEvent: {}
+[36.536117] (-) TimerEvent: {}
+[36.636959] (-) TimerEvent: {}
+[36.644288] (diffdrive_arduino) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o\x1b[0m\n'}
+[36.652209] (diffdrive_arduino) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/wheel.cpp.o\x1b[0m\n'}
+[36.681351] (diffdrive_arduino) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o\x1b[0m\n'}
+[36.687066] (diffdrive_arduino) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/wheel.cpp.o\x1b[0m\n'}
+[36.737203] (-) TimerEvent: {}
+[36.837965] (-) TimerEvent: {}
+[36.938821] (-) TimerEvent: {}
+[37.039700] (-) TimerEvent: {}
+[37.140561] (-) TimerEvent: {}
+[37.241527] (-) TimerEvent: {}
+[37.342536] (-) TimerEvent: {}
+[37.443515] (-) TimerEvent: {}
+[37.544527] (-) TimerEvent: {}
+[37.645516] (-) TimerEvent: {}
+[37.710838] (diffdrive_arduino) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o\x1b[0m\n'}
+[37.745754] (-) TimerEvent: {}
+[37.846840] (-) TimerEvent: {}
+[37.948007] (-) TimerEvent: {}
+[38.066929] (-) TimerEvent: {}
+[38.168306] (-) TimerEvent: {}
+[38.269859] (-) TimerEvent: {}
+[38.371738] (-) TimerEvent: {}
+[38.473564] (-) TimerEvent: {}
+[38.575019] (-) TimerEvent: {}
+[38.676646] (-) TimerEvent: {}
+[38.778117] (-) TimerEvent: {}
+[38.879798] (-) TimerEvent: {}
+[38.981400] (-) TimerEvent: {}
+[39.082829] (-) TimerEvent: {}
+[39.184500] (-) TimerEvent: {}
+[39.286062] (-) TimerEvent: {}
+[39.388252] (-) TimerEvent: {}
+[39.490032] (-) TimerEvent: {}
+[39.591828] (-) TimerEvent: {}
+[39.693347] (-) TimerEvent: {}
+[39.795051] (-) TimerEvent: {}
+[39.896587] (-) TimerEvent: {}
+[39.997652] (-) TimerEvent: {}
+[40.098818] (-) TimerEvent: {}
+[40.199885] (-) TimerEvent: {}
+[40.300923] (-) TimerEvent: {}
+[40.402630] (-) TimerEvent: {}
+[40.504017] (-) TimerEvent: {}
+[40.605488] (-) TimerEvent: {}
+[40.707900] (-) TimerEvent: {}
+[40.811460] (-) TimerEvent: {}
+[40.913267] (-) TimerEvent: {}
+[41.014291] (-) TimerEvent: {}
+[41.115736] (-) TimerEvent: {}
+[41.217272] (-) TimerEvent: {}
+[41.318846] (-) TimerEvent: {}
+[41.419867] (-) TimerEvent: {}
+[41.528494] (-) TimerEvent: {}
+[41.634028] (-) TimerEvent: {}
+[41.735583] (-) TimerEvent: {}
+[41.837101] (-) TimerEvent: {}
+[41.938634] (-) TimerEvent: {}
+[42.040092] (-) TimerEvent: {}
+[42.141623] (-) TimerEvent: {}
+[42.243203] (-) TimerEvent: {}
+[42.344685] (-) TimerEvent: {}
+[42.446138] (-) TimerEvent: {}
+[42.547710] (-) TimerEvent: {}
+[42.649237] (-) TimerEvent: {}
+[42.750731] (-) TimerEvent: {}
+[42.852255] (-) TimerEvent: {}
+[42.953622] (-) TimerEvent: {}
+[43.059443] (-) TimerEvent: {}
+[43.160923] (-) TimerEvent: {}
+[43.262467] (-) TimerEvent: {}
+[43.363962] (-) TimerEvent: {}
+[43.465474] (-) TimerEvent: {}
+[43.566989] (-) TimerEvent: {}
+[43.668465] (-) TimerEvent: {}
+[43.769994] (-) TimerEvent: {}
+[43.871495] (-) TimerEvent: {}
+[43.973007] (-) TimerEvent: {}
+[44.074537] (-) TimerEvent: {}
+[44.176080] (-) TimerEvent: {}
+[44.277560] (-) TimerEvent: {}
+[44.379076] (-) TimerEvent: {}
+[44.480542] (-) TimerEvent: {}
+[44.582089] (-) TimerEvent: {}
+[44.683702] (-) TimerEvent: {}
+[44.785231] (-) TimerEvent: {}
+[44.886735] (-) TimerEvent: {}
+[44.988224] (-) TimerEvent: {}
+[45.089728] (-) TimerEvent: {}
+[45.191200] (-) TimerEvent: {}
+[45.292704] (-) TimerEvent: {}
+[45.394293] (-) TimerEvent: {}
+[45.495880] (-) TimerEvent: {}
+[45.597350] (-) TimerEvent: {}
+[45.698817] (-) TimerEvent: {}
+[45.800419] (-) TimerEvent: {}
+[45.902046] (-) TimerEvent: {}
+[46.003668] (-) TimerEvent: {}
+[46.105509] (-) TimerEvent: {}
+[46.207388] (-) TimerEvent: {}
+[46.309243] (-) TimerEvent: {}
+[46.411114] (-) TimerEvent: {}
+[46.513073] (-) TimerEvent: {}
+[46.614689] (-) TimerEvent: {}
+[46.716279] (-) TimerEvent: {}
+[46.817624] (-) TimerEvent: {}
+[46.918705] (-) TimerEvent: {}
+[47.020186] (-) TimerEvent: {}
+[47.121057] (-) TimerEvent: {}
+[47.222183] (-) TimerEvent: {}
+[47.323037] (-) TimerEvent: {}
+[47.423945] (-) TimerEvent: {}
+[47.524840] (-) TimerEvent: {}
+[47.625731] (-) TimerEvent: {}
+[47.726588] (-) TimerEvent: {}
+[47.827385] (-) TimerEvent: {}
+[47.928287] (-) TimerEvent: {}
+[48.029094] (-) TimerEvent: {}
+[48.129901] (-) TimerEvent: {}
+[48.230761] (-) TimerEvent: {}
+[48.331620] (-) TimerEvent: {}
+[48.432490] (-) TimerEvent: {}
+[48.533302] (-) TimerEvent: {}
+[48.634145] (-) TimerEvent: {}
+[48.735077] (-) TimerEvent: {}
+[48.836236] (-) TimerEvent: {}
+[48.937070] (-) TimerEvent: {}
+[49.037900] (-) TimerEvent: {}
+[49.089584] (diffdrive_arduino) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libfake_robot.so\x1b[0m\n'}
+[49.138112] (-) TimerEvent: {}
+[49.238987] (-) TimerEvent: {}
+[49.306145] (diffdrive_arduino) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiffdrive_arduino.so\x1b[0m\n'}
+[49.339188] (-) TimerEvent: {}
+[49.440392] (-) TimerEvent: {}
+[49.541668] (-) TimerEvent: {}
+[49.642496] (-) TimerEvent: {}
+[49.743670] (-) TimerEvent: {}
+[49.845515] (-) TimerEvent: {}
+[49.946848] (-) TimerEvent: {}
+[50.047889] (-) TimerEvent: {}
+[50.149011] (-) TimerEvent: {}
+[50.248531] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target fake_robot\n'}
+[50.249632] (-) TimerEvent: {}
+[50.350622] (-) TimerEvent: {}
+[50.451250] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[50.451889] (-) TimerEvent: {}
+[50.495732] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[50.552148] (-) TimerEvent: {}
+[50.653189] (-) TimerEvent: {}
+[50.662300] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[50.663696] (diffdrive_arduino) Command: {'cmd': ['/bin/cmake', '--install', '/home/ubuntu/robot_ws/build/diffdrive_arduino'], 'cwd': '/home/ubuntu/robot_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_AGENT_PID', '1449'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/robot_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/robot_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1317'), ('XRDP_PULSE_SOURCE_SOCKET', 'xrdp_chansrv_audio_in_socket_10'), ('XRDP_PULSE_SINK_SOCKET', 'xrdp_chansrv_audio_out_socket_10'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator2bcb3aa092f2b6032576f3fd56ad9afe9'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2513'), ('PULSE_SCRIPT', '/etc/xrdp/pulse/default.pa'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '9:45680'), ('_', '/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1596,unix/ubuntu:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', 'b4424984f0f944e49d8b1e75add8851c'), ('XDG_MENU_PREFIX', 'gnome-'), ('XRDP_SOCKET_PATH', '/run/xrdp/sockdir'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':10.0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/robot_ws/install/serial:/opt/ros/foxy'), ('UID', '1000'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0e9c8e4c-be8d-496b-b28b-e69f2cd4c88a'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/bin/lesspipe %s %s'), ('XRDP_SESSION', '1'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/robot_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/robot_ws/install/serial:/opt/ros/foxy')]), 'shell': False}
+[50.708475] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[50.710033] (diffdrive_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[50.711566] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino//robot_hardware.xml\n'}
+[50.746193] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino//fake_robot_hardware.xml\n'}
+[50.753367] (-) TimerEvent: {}
+[50.782360] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[50.820287] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/lib/libfake_robot.so\n'}
+[50.853553] (-) TimerEvent: {}
+[50.858393] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers/robot_controller_example.yaml\n'}
+[50.898043] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot.launch.py\n'}
+[50.932761] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/test_robot.launch.py\n'}
+[50.953722] (-) TimerEvent: {}
+[50.967466] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[51.005082] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[51.040143] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[51.053902] (-) TimerEvent: {}
+[51.074704] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[51.112011] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[51.146102] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[51.154156] (-) TimerEvent: {}
+[51.180174] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[51.217414] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[51.252528] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[51.254268] (-) TimerEvent: {}
+[51.287609] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[51.323940] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[51.354484] (-) TimerEvent: {}
+[51.358508] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[51.394982] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[51.430709] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[51.454617] (-) TimerEvent: {}
+[51.467237] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[51.504788] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[51.542277] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[51.554799] (-) TimerEvent: {}
+[51.578382] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[51.614932] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[51.649250] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[51.654958] (-) TimerEvent: {}
+[51.688419] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[51.755199] (-) TimerEvent: {}
+[51.856011] (-) TimerEvent: {}
+[51.913047] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[51.916429] (-) EventReactorShutdown: {}

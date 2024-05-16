@@ -1,0 +1,40 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/ubuntu/robot_ws/build/serial/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/make cmTC_abae1/fast && /bin/make -f CMakeFiles/cmTC_abae1.dir/build.make CMakeFiles/cmTC_abae1.dir/build
+make[1]: Entering directory '/home/ubuntu/robot_ws/build/serial/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_abae1.dir/src.c.o
+/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_abae1.dir/src.c.o   -c /home/ubuntu/robot_ws/build/serial/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_abae1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abae1.dir/link.txt --verbose=1
+/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_abae1.dir/src.c.o  -o cmTC_abae1 
+/bin/ld: CMakeFiles/cmTC_abae1.dir/src.c.o: in function `main':
+src.c:(.text+0x48): undefined reference to `pthread_create'
+/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
+/bin/ld: src.c:(.text+0x5c): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_abae1.dir/build.make:87: cmTC_abae1] Error 1
+make[1]: Leaving directory '/home/ubuntu/robot_ws/build/serial/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_abae1/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

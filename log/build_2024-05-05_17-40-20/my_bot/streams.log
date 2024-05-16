@@ -1,0 +1,56 @@
+[0.061s] Invoking command in '/home/ubuntu/robot_ws/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/foxy /bin/cmake /home/ubuntu/robot_ws/src/my_bot -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/install/my_bot
+[0.805s] -- The C compiler identification is GNU 9.4.0
+[1.559s] -- The CXX compiler identification is GNU 9.4.0
+[1.589s] -- Check for working C compiler: /bin/cc
+[1.903s] -- Check for working C compiler: /bin/cc -- works
+[1.909s] -- Detecting C compiler ABI info
+[2.200s] -- Detecting C compiler ABI info - done
+[2.240s] -- Detecting C compile features
+[2.242s] -- Detecting C compile features - done
+[2.288s] -- Check for working CXX compiler: /bin/c++
+[2.607s] -- Check for working CXX compiler: /bin/c++ -- works
+[2.612s] -- Detecting CXX compiler ABI info
+[2.934s] -- Detecting CXX compiler ABI info - done
+[2.972s] -- Detecting CXX compile features
+[2.974s] -- Detecting CXX compile features - done
+[3.008s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.144s] -- Found PythonInterp: /bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.145s] -- Using PYTHON_EXECUTABLE: /bin/python3
+[4.144s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.571s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.653s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.665s] -- Added test 'lint_cmake' to check CMake code style
+[4.673s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.716s] -- Added test 'xmllint' to check XML markup files
+[4.729s] -- Configuring done
+[4.737s] -- Generating done
+[4.741s] -- Build files have been written to: /home/ubuntu/robot_ws/build/my_bot
+[4.752s] Invoked command in '/home/ubuntu/robot_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /bin/cmake /home/ubuntu/robot_ws/src/my_bot -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/install/my_bot
+[4.762s] Invoking command in '/home/ubuntu/robot_ws/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/foxy /bin/cmake --build /home/ubuntu/robot_ws/build/my_bot -- -j4 -l4
+[4.912s] Invoked command in '/home/ubuntu/robot_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /bin/cmake --build /home/ubuntu/robot_ws/build/my_bot -- -j4 -l4
+[5.056s] Invoking command in '/home/ubuntu/robot_ws/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/foxy /bin/cmake --install /home/ubuntu/robot_ws/build/my_bot
+[5.092s] -- Install configuration: ""
+[5.093s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/config
+[5.093s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/config/empty.yaml
+[5.094s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/description
+[5.094s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro
+[5.095s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/launch
+[5.095s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
+[5.096s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/worlds
+[5.096s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/worlds/empty.world
+[5.097s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
+[5.099s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
+[5.100s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
+[5.101s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv
+[5.102s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/environment/path.sh
+[5.102s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/environment/path.dsv
+[5.103s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/local_setup.bash
+[5.104s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/local_setup.sh
+[5.105s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/local_setup.zsh
+[5.106s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/local_setup.dsv
+[5.107s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/package.dsv
+[5.108s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[5.109s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake
+[5.109s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake
+[5.110s] -- Installing: /home/ubuntu/robot_ws/install/my_bot/share/my_bot/package.xml
+[5.116s] Invoked command in '/home/ubuntu/robot_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /bin/cmake --install /home/ubuntu/robot_ws/build/my_bot
